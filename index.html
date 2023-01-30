@@ -3,38 +3,40 @@
         <link rel="stylesheet" href="index.css">
     </head>
     <body>
-        <div class="container">
+        <main class="container">
             <div class="home">
-                <h3 class="home-side">HOME</h3>
-                <div class="home-background">
-                    <h3 id="home-score">0</h3>
+                <h3>HOME</h3>
+                <div class="scoreboard-home">
+                    <h2 id="home-score">0</h2>
                 </div>
-
-                <div class="btn-container">
-                        <button class="btn" id="onepointHome" onclick="onepointHome()">
-                        +1</button>
-                        <button class="btn" id="twopointHome" onclick="twopointHome()">
-                        +2</button>
-                        <button class="btn" id="thirdpointHome" onclick="thirdpointHome()">
-                        +3</button>
-
+    
+                <div class="buttons">
+                    <button class="plusone-btn" id="home-score-btn-1">+1</button>
+                    <button class="plustwo-btn" id="home-score-btn-2">+2</button>
+                    <button class="plusthree-btn" id="home-score-btn-3">+3</button>
+                    <button class="reset-btn" id="reset-home-score">Reset</button>
                 </div>
-            <div class="guest">
-                <h3 class="guest-side">GUEST</h3>
-                <div class="guest-background">
-                    <h3 id="guest-score">0</h3>
-
-                </div>
-                <button class="btn" id="onepointGuest" onclick="onepointGuest()">
-                    +1</button>
-                    <button class="btn" id="twopointGuest" onclick="twopointGuest()">
-                    +2</button>
-                    <button class="btn" id="thirdpointGuest" onclick="thirdpointGuest()">
-                    +3</button>
-
-
             </div>
-        </div>
+    
+            
+            <div class="guest">
+                <h3>GUEST</h3>
+                <div class="scoreboard-guest">
+                    <h2 id="guest-score">0</h2>
+                </div>
+    
+              
+                <div class="buttons">
+                    <button class="plusone-btn" id="guest-score-btn-1">+1</button>
+                    <button class="plustwo-btn" id="guest-score-btn-2">+2</button>
+                    <button class="plusthree-btn" id="guest-score-btn-3">+3</button>
+                    <button class="reset-btn" id="reset-guest-score">Reset</button>
+                </div>
+            </div>
+    
+            
+    
+        </main>
         <script src="index.js"></script>
     </body>
 </html>

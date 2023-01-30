@@ -1,42 +1,62 @@
-let homeScore = document.getElementById("home-score")
-let guestScore = document.getElementById("guest-score")
+let homeScoreEl = document.getElementById("home-score");
+let guestScoreEl = document.getElementById("guest-score");
+
+let homeScoreBtnOne = document.getElementById("home-score-btn-1");
+let homeScoreBtnTwo = document.getElementById("home-score-btn-2");
+let homeScoreBtnThree = document.getElementById("home-score-btn-3");
+let resetHomeScore = document.getElementById("reset-home-score");
+let resetGuestScore = document.getElementById("reset-guest-score");
+
+let guestScoreBtnOne = document.getElementById("guest-score-btn-1");
+let guestScoreBtnTwo = document.getElementById("guest-score-btn-2");
+let guestScoreBtnThree = document.getElementById("guest-score-btn-3");
 
 
-//create a counter for both home and guest scores
 
-let homePoints = 0 
-let guestPoints = 0 
+homeScoreBtnOne.addEventListener("click", function () {
+  homeScoreEl.textContent++;
+});
 
 
-//home score counter 
-function onepointHome() {
-    homePoints += 1 
-    homeScore.textContent = homePoints 
-}
 
-function twopointHome() {
-    homePoints += 2
-    homeScore.textContent = homePoints 
-}
+homeScoreBtnTwo.addEventListener("click", function () {
+  homeScoreEl.textContent = Number(homeScoreEl.textContent) + 2;
+});
 
-function threepointHome() {
-    homePoints += 3
-    homeScore.textContent = homePoints 
-}
 
-//guest score counter 
 
-function onepointGuest() {
-    guestPoints += 1 
-    guestScore.textContent = guestPoints 
-}
+homeScoreBtnThree.addEventListener("click", function () {
+  homeScoreEl.textContent = Number(homeScoreEl.textContent) + 3;
+});
 
-function twopointGuest() {
-    guestPoints += 2
-    guestScore.textContent = guestPoints 
-}
 
-function threepointGuest() {
-    guestPoints += 3
-    guestScore.textContent = guestPoints 
-}
+
+resetHomeScore.addEventListener("click", function () {
+  homeScoreEl.textContent = 0;
+});
+
+
+
+
+
+guestScoreBtnOne.addEventListener("click", function () {
+  guestScoreEl.textContent++;
+});
+
+
+
+guestScoreBtnTwo.addEventListener("click", function () {
+  guestScoreEl.textContent = Number(guestScoreEl.textContent) + 2;
+});
+
+
+
+guestScoreBtnThree.addEventListener("click", function () {
+  guestScoreEl.textContent = Number(guestScoreEl.textContent) + 3;
+});
+
+
+
+resetGuestScore.addEventListener("click", function () {
+  guestScoreEl.textContent = 0;
+});
